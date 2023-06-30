@@ -1,0 +1,87 @@
+
+/*This program will take an input from user in the form of button press. 
+Then system will set the temperature as per the input and save data in flash chip.
+Show time & date and realtime temperature on LCD display
+User input should display on LCD (below date and time*/
+
+
+Print data on LCD
+	"23:59		 °C
+         Date & Time – 06|06|23"
+
+Press Button 1 (ISR)
+	Relay ON(Heater ON)
+	print "23:59	   real_temp°C
+               Date & Time – 06|06|23"
+	       Set T - 32°C"
+
+	if (temp == 32C)
+		Relay OFF(Heater OFF)
+	print "23:59		32°C
+               Date & Time – 06|06|23"
+	       Set T - 32°C" 
+	SAVE set temp and time stamp in flash chip 
+
+     ##	if (temp < 32C)
+		Relay ON(Heater ON)
+	print "23:59	   real_temp°C
+               Date & Time – 06|06|23"
+	       Set T - 32°C"
+
+		if(temp == 32C)
+		Relay ON(Heater OFF) ##
+
+Press Button 2 (ISR)
+	Relay ON(Heater ON)
+	print "23:59	   real_temp°C
+               Date & Time – 06|06|23"
+	       Set T - 36°C"
+
+	if (temp == 36C)
+		Relay OFF(Heater OFF)
+	print "23:59		32°C
+               Date & Time – 06|06|23"
+	       Set T - 36°C"
+	SAVE set temp and time stamp in flash chip 
+
+
+     ##	if (temp < 32C)
+		Relay ON(Heater ON)
+	print "23:59	   real_temp°C
+               Date & Time – 06|06|23"
+	       Set T - 36°C"
+
+		if(temp == 36C)
+		Relay ON(Heater OFF) ##
+
+	if TIME == 18:00 
+	Generate file of stored data in flash chip 
+	and send to the computer system
+	        
+		
+
+/**************************************************************************************************************/
+
+
+
+void main()
+{
+	void ShowDisplay();
+	if (button1 pressed)
+	{
+	void isr_button_1();
+	}
+	
+	if(button2 pressed)
+	{
+	 void isr_button_2()
+        }
+
+	if(temp<32C/36C)
+	{
+	Relay ON
+	}
+	if(temp<32C/36C)
+	{
+	Relay OFF
+	}

@@ -1,0 +1,26 @@
+uint8_rtc_init(void)
+{
+
+}
+
+void rtc_set_current_time()
+{
+
+}
+
+void rtc_get_current_time()
+{
+
+}
+
+
+void rtc_set_current_date()
+{
+
+}
+
+
+void rtc_get_current_date()
+{
+
+}

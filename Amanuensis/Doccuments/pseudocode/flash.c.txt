@@ -1,0 +1,14 @@
+uint32_t flash_write_data()
+{
+
+}
+
+void flash_read_data()
+{
+
+}
+
+void erase_flash()
+{
+
+}
